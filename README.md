@@ -44,7 +44,7 @@ print(result)
 ```
 
 ## Files Included
-- **tests_ac.py**
+- **aho_corasick.py**
   - Complete implementation of the Aho-Corasick algorithm.
   - The AhoCorasick class build an automaton when initialized using the _AutomatonNode class internally.
 
