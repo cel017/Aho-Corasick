@@ -85,9 +85,10 @@ So, if the actual output is -
 ```
 The output file will look like -
 ```
-ab 1 2
 a 1
+ab 1 2
 ```
+To ensure uniformity, the lines of the output files are sorted Lexicographically. 
 
 ## Peculiarities
 Whitespaces in input files as mentioned above. Otherwise, there aren't any problems in the main implementation that I'm aware of.
