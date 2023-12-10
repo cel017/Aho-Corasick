@@ -79,7 +79,7 @@ To run all tests, navigate to src folder and:
 
 The runtime test shows the time taken for building the automaton and scanning the list for successive powers of 10 for both.
 
-- **Build Automaton**: The time is increasing roughly by a factor of 10 at each iteration of m*(10^i). The relationship is linear and the runtime seems consistent with theory. [Note: Consider deleting the file with m = 10^7. It took 30 seconds to run on my PC]:
+- **Build Automaton**: The time is increasing roughly by a factor of 10 at each iteration of m*(10^i). The relationship is linear and the runtime seems consistent with theory. [Note: Consider deleting the file with in time_m 10^7, it takes too long to run]:
   - 1        : 0.00010301600013917778,
   - 10       : 5.76190004721866e-05, 
   - 100      : 0.000337752000632463, 
