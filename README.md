@@ -80,6 +80,7 @@ To run all tests, navigate to src folder and:
 The runtime test shows the time taken for building the automaton and scanning the list for successive powers of 10 for both.
 
 - **Build Automaton**: The time is increasing roughly by a factor of 10 at each iteration of m*(10^i). The relationship is linear and the runtime seems consistent with theory. [Note: Consider deleting the file with in time_m 10^7, it takes too long to run]:
+  - m        : delta_time
   - 1        : 0.00010301600013917778,
   - 10       : 5.76190004721866e-05, 
   - 100      : 0.000337752000632463, 
@@ -89,14 +90,15 @@ The runtime test shows the time taken for building the automaton and scanning th
   - 1000000  : 3.3667016560002594, 
   - 10000000 : 31.554771600000095
 
-- **Aho-Corasick Search**:
-  - 0       : 1.5294999684556387e-05
-  - 3       : 1.2361999324639328e-05
-  - 136     : 4.386000000522472e-05
-  - 1952    : 0.0007336819999181898
-  - 24308   : 0.009405938000782044
-  - 242314  : 0.09534698099923844
-  - 3183013 : 1.9206841590003023
+- **Aho-Corasick Search**: The rate of change of x(n+z) is between 10-13X for the latter iterations, and the time seems to be increasing at about the same rate.
+  - n + z   : delta_time 
+  - 0       : 2.0115001461817883e-05
+  - 3       : 1.487600093241781e-05
+  - 136     : 0.00017949200082512107
+  - 1952    : 0.0020324500001152046
+  - 24308   : 0.026844595000511617
+  - 242314  : 0.2632764390000375
+  - 3183013 : 3.975073739000436
 
 The input files have two lines:
 - The first line is a sequence of space separated pattern strings
