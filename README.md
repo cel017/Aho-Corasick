@@ -43,10 +43,48 @@ result = aho_corasick.search(target_string)
 print(result)
 ```
 
+## Files Included
+- **tests_ac.py**
+  - Complete implementation of the Aho-Corasick algorithm.
+  - The AhoCorasick class build an automaton when initialized using the _AutomatonNode class internally.
+
+- **tests_ac.py**
+  - File to run tests.
+  - Use run_tests() to generate outputs for all input files in the input dir and diff against expected.
+  - Use parse_input() to parse input file and generate_expected_file() to create an output file with Aho-Corasick.
+
+- **testcase_generator.py**
+  - File for randomly generating input and computing expected output with a naive algorithm.
+  - Use generate_input(), parse it (parse_input() from tests_ac.py) and then use generate_output_file() to use a naive search to solve the input.
+
+- **testfiles**
+  - This directory has the input files and expected output files.
+
 ## Tests
 To run all tests, navigate to src folder and:
 - All Tests
   ```
   make all
   ```
-  
+
+The input files have two lines:
+- The first line is a sequence of space separated pattern strings
+- The second line is a single target string
+Since whitespaces are used as a delimeter here it's not possible to have strings that have whitespaces in them in the inputfiles since they will just get interpreted as two different strings by the program. This is merely a limitation of the input format, and the algorithm itself treats whitespaces like any other character.
+
+## Interpretting the output
+The output of the search function in the AhoCorasick class is a defaultdict in which the keys are patterns that appear in the target string, and the values are all of the starting indexes that they appear at {getting the ending index is trivial -> i+len(pattern)}.
+
+The output files have each dictionary item on their own line followed by its values, all space separated.
+So, if the actual output is -
+```
+{"ab": [1, 2], "a": [1]}
+```
+The output file will look like -
+```
+ab 1 2
+a 1
+```
+
+## Peculiarities
+Whitespaces in input files as mentioned above. Otherwise, there aren't any problems in the main implementation that I'm aware of.
