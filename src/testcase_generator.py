@@ -25,9 +25,8 @@ def naive_search(patterns, search_str):
                 i += 1
     return result
 
-def generate_output_file(output_file_path, patterns, search_str):
+def generate_expected_file(output_file_path, patterns, search_str):
     match = defaultdict(list)
-    search_str = search_str[0]
     for pattern in set(patterns):
         i = 0
         while i < len(search_str):
@@ -36,7 +35,6 @@ def generate_output_file(output_file_path, patterns, search_str):
                 i += 1 
             else:
                 i += 1
-            res = ""
     
     results = []
     for k, v in match.items():
@@ -49,8 +47,5 @@ def generate_output_file(output_file_path, patterns, search_str):
 if __name__ == '__main__':
 
     ## random gen input/expected here ##
-    for i in range(6, 11):
-        generate_input(30, 1000, 10000, f'src/testfiles/input/{i}.txt')
-        p, s = parse_input_file(f'src/testfiles/input/{i}.txt')
-        generate_output_file(f'src/testfiles/expected/{i}.txt', p, s)
+    generate_input(10, 1000000, 1000000, f'testfiles/time/time_nz/{1000000}.txt')
 

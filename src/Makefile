@@ -2,10 +2,13 @@ INPUT_FOLDER = testfiles/input
 OUTPUT_FOLDER = testfiles/output
 EXPECTED_FOLDER = testfiles/expected
 
-all: clean run_tests
+all: clean correct time
 
 clean:
 	rm -f $(OUTPUT_FOLDER)/*
 
-run_tests:
-	python test_ac.py
+correct:
+	python test_ac.py c
+
+time:
+	python test_ac.py t
