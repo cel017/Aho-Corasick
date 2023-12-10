@@ -70,6 +70,7 @@ To run all tests, navigate to src folder and:
 The input files have two lines:
 - The first line is a sequence of space separated pattern strings
 - The second line is a single target string
+
 Since whitespaces are used as a delimeter here it's not possible to have strings that have whitespaces in them in the inputfiles since they will just get interpreted as two different strings by the program. This is merely a limitation of the input format, and the algorithm itself treats whitespaces like any other character.
 
 ## Interpretting the output
