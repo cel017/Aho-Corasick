@@ -61,13 +61,14 @@ print(result)
   - This directory has the input files and expected output files.
 
 ## Tests
+2-10.txt are larger cases. The rest are edge cases and some manually created cases to confirm functionality.
+
 To run all tests, navigate to src folder and:
 - All Tests
   ```
   make all
   ```
 
-2-10.txt are larger cases. The rest are edge cases and some manually created cases to confirm functionality.
 The input files have two lines:
 - The first line is a sequence of space separated pattern strings
 - The second line is a single target string
