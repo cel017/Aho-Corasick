@@ -4,7 +4,7 @@ EXPECTED_FOLDER = testfiles/expected
 
 all: clean_output run_tests
 
-clean_output:
+clean:
 	rm -f $(OUTPUT_FOLDER)/*
 
 run_tests:
