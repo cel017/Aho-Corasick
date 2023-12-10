@@ -15,7 +15,6 @@ z = total number of matches
 - **Creating Suffix and Output Links:** O(m)
 
 - **Searching for Patterns:** O(n + z)
-  - The time complexity for searching the target string for occurrences of the specified patterns.
 
 ## Resources Used
 - **Original Paper:**
