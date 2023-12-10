@@ -1,6 +1,6 @@
-INPUT_FOLDER = testfile/input
-OUTPUT_FOLDER = testfile/output
-EXPECTED_FOLDER = testfile/expected
+INPUT_FOLDER = testfiles/input
+OUTPUT_FOLDER = testfiles/output
+EXPECTED_FOLDER = testfiles/expected
 
 all: clean_output run_tests
 
