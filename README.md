@@ -80,23 +80,23 @@ To run all tests, navigate to src folder and:
 The runtime test shows the time taken for building the automaton and scanning the list for successive powers of 10 for both.
 
 - **Build Automaton**: The time is increasing roughly by a factor of 10 at each iteration of m*(10^i). The relationship is linear and the runtime seems consistent with theory. [Note: Consider deleting the file with m = 10^7. It took 30 seconds to run on my PC]:
-  - 1: 0.00010301600013917778,
-  - 10: 5.76190004721866e-05, 
-  - 100: 0.000337752000632463, 
-  - 1000: 0.0031482329995924374, 
-  - 10000: 0.03523344099994574, 
-  - 100000: 0.37194910800008074, 
-  - 1000000: 3.3667016560002594, 
-  - 10000000: 31.554771600000095
+  - 1        : 0.00010301600013917778,
+  - 10       : 5.76190004721866e-05, 
+  - 100      : 0.000337752000632463, 
+  - 1000     : 0.0031482329995924374, 
+  - 10000    : 0.03523344099994574, 
+  - 100000   : 0.37194910800008074, 
+  - 1000000  : 3.3667016560002594, 
+  - 10000000 : 31.554771600000095
 
 - **Aho-Corasick Search**:
-  - 0 1.5294999684556387e-05
-  - 3 1.2361999324639328e-05
-  - 136 4.386000000522472e-05
-  - 1952 0.0007336819999181898
-  - 24308 0.009405938000782044
-  - 242314 0.09534698099923844
-  - 3183013 1.9206841590003023
+  - 0       : 1.5294999684556387e-05
+  - 3       : 1.2361999324639328e-05
+  - 136     : 4.386000000522472e-05
+  - 1952    : 0.0007336819999181898
+  - 24308   : 0.009405938000782044
+  - 242314  : 0.09534698099923844
+  - 3183013 : 1.9206841590003023
 
 The input files have two lines:
 - The first line is a sequence of space separated pattern strings
