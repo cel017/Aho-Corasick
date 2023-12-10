@@ -83,14 +83,14 @@ The time test shows the time taken for building the automaton and scanning the l
 
 **Build Automaton**: The time is increasing roughly by a factor of 10 at each iteration of m*(10^i). The relationship is linear and the runtime seems consistent with theory:
 
-{1: 0.00010301600013917778,
-10: 5.76190004721866e-05, 
-100: 0.000337752000632463, 
-1000: 0.0031482329995924374, 
-10000: 0.03523344099994574, 
-100000: 0.37194910800008074, 
-1000000: 3.3667016560002594, 
-10000000: 31.554771600000095}
+-1: 0.00010301600013917778,
+-10: 5.76190004721866e-05, 
+-100: 0.000337752000632463, 
+-1000: 0.0031482329995924374, 
+-10000: 0.03523344099994574, 
+-100000: 0.37194910800008074, 
+-1000000: 3.3667016560002594, 
+-10000000: 31.554771600000095
 
 The input files have two lines:
 - The first line is a sequence of space separated pattern strings
