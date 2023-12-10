@@ -7,8 +7,8 @@ Aho-Corasick is an algorithm for matching multiple strings within a target strin
 ## Big-O
 My implementation of the algorithm matches the theoretical runtime bounds.
 
-n = length of target string
-m = sum of lengths of pattern strings
+n = length of target string;
+m = sum of lengths of pattern strings;
 z = total number of matches
 - **Building the Trie:** O(m)
 
