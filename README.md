@@ -89,6 +89,15 @@ The runtime test shows the time taken for building the automaton and scanning th
   - 1000000: 3.3667016560002594, 
   - 10000000: 31.554771600000095
 
+- **Aho-Corasick Search**:
+  - 0 1.5294999684556387e-05
+  - 3 1.2361999324639328e-05
+  - 136 4.386000000522472e-05
+  - 1952 0.0007336819999181898
+  - 24308 0.009405938000782044
+  - 242314 0.09534698099923844
+  - 3183013 1.9206841590003023
+
 The input files have two lines:
 - The first line is a sequence of space separated pattern strings
 - The second line is a single target string
